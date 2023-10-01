@@ -1,26 +1,26 @@
 exports.create = async (req, res)=>{
     res.status(200).json({
         status: "Success",
-        data : "Representing blogController"
+        data : "Representing userController"
     })
 }
 
 exports.read = async (req, res)=>{
     res.status(200).json({
         status: "Success",
-        data : "Reading blogController"
+        data : "Reading userController"
     })
 }
 
 exports.delete = async (req, res)=>{
     res.status(200).json({
         status: "Success",
-        data : "Deleting blogController"
+        data : "Deleting userController"
     })
 }
 exports.update = async (req, res)=>{
     res.status(200).json({
         status: "Success",
-        data : "Updating blogController"
+        data : "Updating userController"
     })
 }

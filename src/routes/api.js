@@ -1,46 +1,35 @@
 const express = require("express");
 const router = express.Router();
 
-const blogController= require("../controllers/blogController");
-const commentController = require("../controllers/commentController");
-const messageController = require("../controllers/messageController");
-const portfolioController = require("../controllers/portfolioController");
-const productController = require("../controllers/productController");
+const userController= require("../controllers/userController");
+const postController = require("../controllers/postController");
+const adminController = require("../controllers/adminController");
+const subAdminController = require("../controllers/subAdminController");
 
 
-// BlogController
-router.get("/one", blogController.create);
-router.get("/two", blogController.read);
-router.get("/three", blogController.delete);
-router.get("/four", blogController.update);
+// userController
+router.get("/one", userController.create);
+router.get("/two", userController.read);
+router.get("/three", userController.delete);
+router.get("/four", userController.update);
 
-// commentController
-router.get("/five", commentController.create);
-router.get("/six", commentController.read);
-router.get("/seven", commentController.delete);
-router.get("/eight", commentController.update);
+// postController
+router.get("/five", postController.create);
+router.get("/six", postController.read);
+router.get("/seven", postController.delete);
+router.get("/eight", postController.update);
 
-// messageController
-router.get("/nine", messageController.create);
-router.get("/ten", messageController.read);
-router.get("/eleven", messageController.delete);
-router.get("/twelve", messageController.update);
+// adminController
+router.get("/nine", adminController.create);
+router.get("/ten", adminController.read);
+router.get("/eleven", adminController.delete);
+router.get("/twelve", adminController.update);
 
-// portfolioController
-router.get("/thirteen", portfolioController.create);
-router.get("/fourteen", portfolioController.read);
-router.get("/fifteen", portfolioController.delete);
-router.get("/sixteen", portfolioController.update);
-
-// productController
-router.get("/seventeen", productController.create);
-router.get("/eighteen", productController.read);
-router.get("/ninteen", productController.delete);
-router.get("/twenty", productController.update);
-
-
-
-
+// subAdminController
+router.get("/thirteen", subAdminController.create);
+router.get("/fourteen", subAdminController.read);
+router.get("/fifteen", subAdminController.delete);
+router.get("/sixteen", subAdminController.update);
 
 
 module.exports= router
